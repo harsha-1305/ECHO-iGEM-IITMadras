@@ -13,7 +13,12 @@ Visit our wiki at ___ for more info!
 
 ## Installation Instructions
 
-After installation, ensure your directory `/ECHO-iGEM-IITMadras/` looks as follows -
+Cloning this repo requires the `lfs` (large file size) module of git. So, first make sure its installed by running `git lfs install` in terminal.
+Clone the repo into your desired directory with `git clone https://github.com/harsha-1305/ECHO-iGEM-IITMadras.git`. Follow with `git lfs pull` if required.
+
+To be safe, manually create a top-level empty directory `instances` within `ECHO-iGEM-IITMadras`.
+
+Before proceeding, ensure your directory `ECHO-iGEM-IITMadras/` looks as follows -
 
 ```bash
 ECHO-iGEM-IITMadras
