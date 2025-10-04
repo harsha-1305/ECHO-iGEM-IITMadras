@@ -2,14 +2,14 @@
 ECHO (Epigenetic Control with Hybrid Optimization) is a software tool developed by the iGEM team of IIT Madras, which enables identification of those methylation sites (CpG islands) that are most relevant in regulating a gene's expression.
 
 Given a methylation dataset and the mapped gene expression values, ECHO trains two models -
-1. An AdaptiveRegressiveCNN (inspired by ___ ) - a model capable of better predictive accuracy, but loses individual feature importance
-2. An ElasticNet Linear Regressor (inspired by ___ ) - a model with lesser predictive accuracy, but retains individual feature importance
+1. An AdaptiveRegressiveCNN (inspired by DeepMethyGene, Yan et al, 2025) - a model capable of better predictive accuracy, but loses individual feature importance
+2. An ElasticNet Linear Regressor (inspired by geneEXPLORE, Kim et al, 2020) - a model with lesser predictive accuracy, but retains individual feature importance
 
 The algorithm then methylates sites predicted important (by the ElasticNet), and runs modified inputs via the AdaptiveRegressiveCNN, to provide a final recommendation of sites for methylation to upregulate/downregulate gene expression.
 
 > This tool is developed to eventually aide in experiment design for use with the dCas9-DMNT system designed by iGEM IIT-Madras, 2025.
 
-Visit our wiki at ___ for more info!
+Visit our wiki at [https://2025.igem.wiki/iit-madras/](url) for more info!
 
 ## Installation Instructions
 
@@ -97,10 +97,12 @@ I provide a quick runthrough on gene AADAT while considering methylations within
       2. -1 : Calculate for downregulation
 10. `python -m cli compare-weights -gi AADAT -w 10` - Plots and compares ElasticNet weights with the AdaptiveRegressiveCNN gradCAM values.
 
+Check the output file at `instances\AADAT_10.0Mb_imp_cpgs_elasticNet_sequential_1.csv` for the final list of recommendations.
+
 ## Credits
 
 Thank you to the IIT Madras faculty and our alumni for helping us develop software for Analysis of DNA Interactions for Tuning Regulatory Impacts.
 
 ## Reach out to us!
 
-Contact us via email at (igem@smail.iitm.ac.in)!
+Contact us via email at [igem@smail.iitm.ac.in](mail)!
